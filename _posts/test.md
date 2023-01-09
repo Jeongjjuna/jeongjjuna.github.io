@@ -1,0 +1,13 @@
+---
+title:  "연습제목1" 
+
+categories:
+  - Java
+tags:
+  - [Programming, Java]
+
+date: 2023-01-10
+last_modified_at: 2023-01-10
+---
+
+# 테스트1 입니다
