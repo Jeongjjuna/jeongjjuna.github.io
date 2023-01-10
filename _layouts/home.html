@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: archive
 ---
 
@@ -18,5 +18,30 @@ layout: archive
     {% include archive-single.html type=entries_layout %}
   {% endfor %}
 </div>
+
+{% include paginator.html %} -->
+
+---
+layout: archive
+classes: wide
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle" 
+style="font-size: 1.563em;
+color: #ffd966;
+border-bottom: 1px solid #5f6365;
+font-family: 'Cafe24Oneprettynight'">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% for post in posts %}
+  {% include archive-single.html %}
+{% endfor %}
 
 {% include paginator.html %}
