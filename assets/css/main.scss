@@ -1,6 +1,5 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
-search: false
 ---
 
 @charset "utf-8";
@@ -9,14 +8,10 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-
-// - 여기서는 폰트가 적용되지 않음 -
 // "Cafe24Oneprettynight"
-// @font-face {
+//@font-face {
 //     font-family: 'Cafe24Oneprettynight';
 //     src: local('Cafe24Oneprettynight'), url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
 //     font-weight: normal;
 //     font-style: normal;
 // }
-
-//font-family : "Cafe24Oneprettynight"
