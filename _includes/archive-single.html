@@ -13,17 +13,19 @@
 <div class="{{ include.type | default: 'list' }}__item">
   <article class="archive-item">
       <div>
-          <i class="fas fa-fw fa-calendar-alt" aria-hidden="true" style="font-size: 0.6em;"> </i>{{ post.date | date: " %Y.%m.%d" }}
+          <i class="fas fa-fw fa-calendar-alt" aria-hidden="true" style="font-size: 15px;"> </i>{{ post.date | date: " %Y.%m.%d" }}
           <br>
           <span>
-            <a href="{{ post.url }}" style="font-size: 15px;">{{post.title}}</a>
+            <a href="{{ post.url }}" style="font-size: 20px;">{{post.title}}</a>
           </span>
           <br>
-          <small style="font-size: 15px;"> 
+          <small style="font-size: 20px;"> 
             {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
               {%- include post__taxonomy.html -%}
             {% endif %}
           </small>
+          <br>
+          <br>
       </div>
     </article>
 </div>
