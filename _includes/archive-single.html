@@ -1,4 +1,4 @@
-<!-- {% if post.header.teaser %}
+{% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
   {% assign teaser = site.teaser %}
@@ -27,9 +27,9 @@
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
-</div> -->
+</div>
 
-
+<!-- 
 {% if post.header.teaser %}
     {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
 {% else %}
@@ -56,4 +56,4 @@
             </small>
         </div>
     </article>
-</div>
+</div> -->
