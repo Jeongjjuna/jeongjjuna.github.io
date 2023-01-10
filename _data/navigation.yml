@@ -1,5 +1,8 @@
 # main links
 main:
+  - title: "Home"
+    url: /index.html
+    
   - title: "Category"
     url: /categories/
   # - title: "About"
