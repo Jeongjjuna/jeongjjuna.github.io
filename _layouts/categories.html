@@ -17,7 +17,7 @@ layout: archive
       {% if category[1].size == i %}
         <li>
           <a href="#{{ category[0] | slugify }}">
-            <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
+            <strong style="font-family: 'Cafe24Oneprettynight';">{{ category[0] }}</strong> <span class="taxonomy__count" style="font-family: 'Cafe24Oneprettynight';">{{ i }}</span>
           </a>
         </li>
       {% endif %}
@@ -30,7 +30,7 @@ layout: archive
   {% for category in site.categories %}
     {% if category[1].size == i %}
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ category[0] }}</h2>
+        <h2 class="archive__subtitle" style="font-family: 'Cafe24Oneprettynight';">{{ category[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in category.last %}
             <article class="archive-item">
@@ -39,7 +39,7 @@ layout: archive
                     <a href="{{ post.url }}" style = "text-decoration: none;">{{post.title}}</a>&nbsp
                   </span>
                   <small> 
-                    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+                    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true" style="font-family: 'Cafe24Oneprettynight';"> </i>{{ post.date | date: " %Y.%m.%d" }}
                     {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
                       {%- include post__taxonomy.html -%}
                     {% endif %}
