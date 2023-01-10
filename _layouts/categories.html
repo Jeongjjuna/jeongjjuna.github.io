@@ -36,7 +36,7 @@ layout: archive
             <article class="archive-item">
               <div>
                   <span>
-                    <a href="{{ post.url }}">{{post.title}}</a>&nbsp
+                    <a href="{{ post.url }}" style = "text-decoration: none;">{{post.title}}</a>&nbsp
                   </span>
                   <small> 
                     <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
@@ -48,7 +48,7 @@ layout: archive
             </article>
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+        <a href="#page-title" class="back-to-top" style = "text-decoration: none;">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
       </section>
     {% endif %}
   {% endfor %}
