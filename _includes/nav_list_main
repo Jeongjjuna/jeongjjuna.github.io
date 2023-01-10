@@ -12,44 +12,44 @@
         </li>
         <li>
             <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-            <span class="nav__sub-title" style="color: rgb(214, 184, 33);">Java</span>
+            <span class="nav__sub-title" style="color: #ffd559; font-size: 24.91px;">Java</span>
                 <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
                 <ul>
                     <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
                     <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                     {% for category in site.categories %}
                         {% if category[0] == "Java" %}
-                            <li><a href="/categories/Java" class="">Java ({{category[1].size}})</a></li>
+                            <li><a href="/categories/Java" class="" style="font-size: 18.6827px; color: #fff2cc;">Java ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "OOT" %}
-                            <li><a href="/categories/Java" class="">Java 객체지향설계 ({{category[1].size}})</a></li>
+                            <li><a href="/categories/Java" class="" style="font-size: 18.6827px; color: #fff2cc;">Java 객체지향설계 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
 
-            <span class="nav__sub-title" style="color: rgb(214, 184, 33);">Coding Test</span>
+            <span class="nav__sub-title" style="color: #ffd559; font-size: 24.91px;">Coding Test</span>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Algorithm" %}
-                            <li><a href="/categories/algorithm" class="">알고리즘 구현 (with Python) ({{category[1].size}})</a></li>
+                            <li><a href="/categories/algorithm" class="" style="font-size: 18.6827px; color: #fff2cc;">알고리즘 구현 (with Python) ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Programmers" %}
-                            <li><a href="/categories/programmers" class="">프로그래머스 ({{category[1].size}})</a></li>
+                            <li><a href="/categories/programmers" class="" style="font-size: 18.6827px; color: #fff2cc;">프로그래머스 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "BOJ" %}
-                            <li><a href="/categories/boj" class="">백준 ({{category[1].size}})</a></li>
+                            <li><a href="/categories/boj" class="" style="font-size: 18.6827px; color: #fff2cc;">백준 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>

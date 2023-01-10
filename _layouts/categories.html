@@ -39,7 +39,7 @@ layout: archive
                     <a href="{{ post.url }}" style = "text-decoration: none; font-size: 15px;">{{post.title}}</a>&nbsp
                   </span>
                   <small> 
-                    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true" style="font-family: 'Cafe24Oneprettynight'; font-size: 11.25px;"> </i>{{ post.date | date: " %Y.%m.%d" }}
+                    <i class="fas fa-fw fa-calendar-alt" aria-hidden="true" style="font-family: 'Cafe24Oneprettynight'; font-size: 7px;"> </i>{{ post.date | date: " %Y.%m.%d" }}
                     {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
                       {%- include post__taxonomy.html -%}
                     {% endif %}
