@@ -67,6 +67,7 @@
   
     .site-nav {
       margin-left: 0;
+      font-family: "KyoboHand";
   
       @include breakpoint($small) {
         float: right;
@@ -85,7 +86,6 @@
     display: block;
     list-style-type: none;
     white-space: nowrap;
-
     font-family: "KyoboHand";
   
     &--lg {
