@@ -66,6 +66,10 @@
   
   /* remove border*/
   .page__content {
+    p {
+      font-size: 0.5em;
+    }
+
     .archive__item-title {
       margin-top: 1em;
       border-bottom: none;
