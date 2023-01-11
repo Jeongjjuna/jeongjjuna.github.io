@@ -9,7 +9,7 @@
   {% assign tags_sorted = page.tags | sort_natural %}
 
   <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
+    <strong style="font-size: 18px;"><i class="fas fa-fw fa-tags" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].tags_label | default: "Tags:" }} </strong>
     <span itemprop="keywords">
     {% for tag_word in tags_sorted %}
       <a href="{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path | relative_url }}" class="page__taxonomy-item p-category" rel="tag" 
@@ -20,7 +20,7 @@
                     border: 1px solid #373C3F;
                     border-radius: 4px;
                     background-color: #4D5357;
-                    font-size: 11.25px;
+                    font-size: 18.25px;
                     text-decoration: none; font-family: 'Cafe24Oneprettynight';
                     color: #FFBF00;">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
     {% endfor %}
