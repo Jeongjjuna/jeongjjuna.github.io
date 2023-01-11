@@ -104,10 +104,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "정지훈"
+  name             : "정지훈 ☃️"
   avatar           : "/assets/images/image.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "공부를 **야무지게** 해보겠습니다!"
-  location         : "Asia/Seoul"
+  bio              : "공부를 **야무지게** 해보겠습니다!🐳"
+  #location         : "Asia/Gwangju"
   email            :
   links:
     - label: "Email"
