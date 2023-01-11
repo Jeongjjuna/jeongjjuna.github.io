@@ -14,9 +14,9 @@
     <article class="archive-item">
         <div>
             <span>
-                <a href="{{ post.url }}">{{post.title}}</a>
+                <a href="{{ post.url }}" style="font-size: 24px;">{{post.title}}</a>
             </span>
-            <small> 
+            <small style="font-size: 16px;"> 
                 <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
                 {% if site.category_archive.type and post.categories[0] and site.tag_archive.type and post.tags[0] %}
                     {%- include post__taxonomy.html -%}
