@@ -25,8 +25,8 @@
                 </ul>
                 <ul>
                     {% for category in site.categories %}
-                        {% if category[0] == "OOT" %}
-                            <li><a href="/categories/Java" class="" style="font-size: 18.6827px; color: #fff2cc;">Java 객체지향설계 ({{category[1].size}})</a></li>
+                        {% if category[0] == "OOP" %}
+                            <li><a href="/categories/OOP" class="" style="font-size: 18.6827px; color: #fff2cc;">Java 객체지향설계 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
@@ -35,21 +35,21 @@
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Algorithm" %}
-                            <li><a href="/categories/algorithm" class="" style="font-size: 18.6827px; color: #fff2cc;">알고리즘 구현 (with Python) ({{category[1].size}})</a></li>
+                            <li><a href="/categories/Algorithm" class="" style="font-size: 18.6827px; color: #fff2cc;">알고리즘 구현 (with Python) ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "Programmers" %}
-                            <li><a href="/categories/programmers" class="" style="font-size: 18.6827px; color: #fff2cc;">프로그래머스 ({{category[1].size}})</a></li>
+                            <li><a href="/categories/Programmers" class="" style="font-size: 18.6827px; color: #fff2cc;">프로그래머스 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "BOJ" %}
-                            <li><a href="/categories/boj" class="" style="font-size: 18.6827px; color: #fff2cc;">백준 ({{category[1].size}})</a></li>
+                            <li><a href="/categories/BOJ" class="" style="font-size: 18.6827px; color: #fff2cc;">백준 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
