@@ -26,7 +26,7 @@
                 <ul>
                     {% for category in site.categories %}
                         {% if category[0] == "OOP" %}
-                            <li><a href="/categories/OOP" class="" style="font-size: 18.6827px; color: #fff2cc;">Java 객체지향설계 ({{category[1].size}})</a></li>
+                            <li><a href="/categories/OOP" class="" style="font-size: 18.6827px; color: #fff2cc;">객체지향프로그래밍 ({{category[1].size}})</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
