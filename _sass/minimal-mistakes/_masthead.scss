@@ -64,11 +64,11 @@
     margin-right: 0;
     width: 100%;
     clear: both;
+    font-family: "KyoboHand";
   
     .site-nav {
       margin-left: 0;
-      font-family: "KyoboHand";
-  
+      
       @include breakpoint($small) {
         float: right;
       }
